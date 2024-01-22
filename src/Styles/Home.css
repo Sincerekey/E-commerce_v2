@@ -1,0 +1,530 @@
+/* Define a custom font */
+@font-face {
+    font-family: myFirstFont;
+    src: url(../componets/Aquire-BW0ox.otf);
+}
+
+/* Apply the custom font to all elements */
+*{
+    font-family: 'myFirstFont', sans-serif;
+}
+
+/* Styling for the HTML element */
+html{
+    background: #141f42;
+    color: #734f8c;
+    font-size: .6vw;
+    /* height: 100vh;   */
+}
+
+/* Styling for the body element */
+body{
+    /* margin: 0;
+    height: 100%; */
+    animation: fadeEffect 1s;
+    height: 100vh;
+}
+
+/* List styling */
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+}
+
+/* Banner styling */
+#banner{
+    /* background-image: url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 10%;
+    position: relative; /* Set position relative on the container */
+    /* display: flex;
+    justify-content: center; */
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif);
+
+  /* Set a specific height */
+  height: 100%;
+  padding: 7%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#heroText{
+    /* position: absolute;
+    top: 70%;
+    text-align: center;
+    color: white;*/
+    font-size: 2.5rem; 
+    text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+}
+#heroText img{
+    width: 75%;
+    height: 75%;
+}
+#heroText div{
+    margin: 0px;
+    padding: 0px;
+}
+#heroText span{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+#heroText h1{
+    margin: 0;    
+}
+
+/* Individual grid element styling for Index*/
+#grid1{
+    display: grid;
+    grid-template-columns: repeat(2, .5fr);
+    grid-template-rows: 1fr;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.54);
+    /* border-radius: 15%; */
+    margin: 1%;
+    padding:1%;
+    position: relative; /* Set position relative on the container */
+    cursor: pointer;
+}
+#grid1 a{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/3;
+}
+#grid1Title{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    padding: 4%;
+    border: 1px solid #ab69b4;
+    margin-bottom: 3%;
+}
+#grid1Title:hover{
+    transition: 0.8s;
+    background: #ab69b4;
+    color:#141f42;
+    border: 2px solid #141f42;
+}
+
+/* Home grid styling */
+#homeGrid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto auto auto;
+    font-size: 3rem;
+    max-height: 50%;
+    margin-top: 1%;
+}
+
+#grid2{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.54);
+    /* border-radius: 15%; */
+    margin: 1%;
+    padding: 1%;
+    align-items: center;
+    position: relative; /* Set position relative on the container */
+    cursor: pointer;
+}
+#grid2 a{
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/3;
+
+}
+#grid2Title{
+    grid-row: 1/2;
+    grid-column: 1/3;
+    padding: 2%;
+    border: 1px solid #ab69b4;
+    /* margin-bottom: 3%; */
+}
+#grid2Title:hover{
+    transition: 0.8s;
+    background: #ab69b4;
+    color:#141f42;
+    border: 2px solid #141f42;
+}
+
+
+
+#streched{
+    grid-column: 1/3;
+    grid-row: 3/3;
+    text-align: center;
+}
+#emailS{
+    grid-row: 2/5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+input {
+    background-color: none;
+    background-color: #141f42;
+    border: none;
+    width: 55%;
+    font-size: inherit;
+    border-bottom: 1px solid #ab69b4;
+}
+
+
+#fname, #lname, #phone, #email, #planet, #zip{
+    background-color: none;
+    border-color: #141f42 !important;
+    height: min-content;
+    color: #ab69b4 !important;
+    width: 100%;
+    height: fit-content !important;
+    font-family: inherit !important;
+    font-size: 2rem;
+    border-bottom: 1px solid #ab69b4
+    !important;
+    /* margin: 10% 0%; */
+    padding: 10% 4%;
+}
+
+fieldset{
+    
+    border-color: transparent !important;
+    color: #ab69b4;
+}
+
+/* Image styling */
+img{
+    width: 50%;
+    height: 50%;
+}
+
+#grid2 img{
+    width: 25%;
+    height: 25%;
+}
+
+/* Heading 6 styling */
+h6{
+    margin: 1%;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Discount label styling */
+.discount{
+    background-color: #131c43;
+    color: #ff0000;
+    padding: 2px 4px;
+    font-size: 1.4rem;
+}
+/* Navigation menu styling */
+nav{
+    font-size: 1.5rem;
+}
+
+/* Navigation styling */
+#nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.54);
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+/* Footer styling */
+footer{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.54);
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    margin-top: 3%;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    bottom: 0;
+    width: 100%;
+}
+
+/* Footer list styling */
+footer ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form{
+    background-color: rgba(0, 0, 0, 0.54);
+    padding: 10%;
+    width: 100%;
+    font-size: 1.5rem;
+
+}
+form input{
+    background-color: rgba(0, 0, 0, 0.041);
+    color: inherit;
+    padding: 5%;
+
+}
+
+#ContactPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Submit button styling */
+#submit {
+    padding: 1.5%;
+    font-size: 1.5rem;
+    border: none;
+    color: #ab69b4;
+    background-color: #141f42;
+    cursor: pointer;
+}
+
+/* Button styling */
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Error message styling */
+span {
+    color: red;
+    font-size: x-small;
+}
+
+/* Header styling */
+#header {
+    text-align: center;
+}
+
+/* Select box styling */
+select {
+    background-color: transparent;
+    color: inherit;
+    border-color: #734f8c;
+    font-size: 2rem;
+}
+
+/* Issues section styling */
+#issues {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Option styling */
+option {
+    text-align: center;
+}
+
+/* Anchor styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 2%;
+    margin: 0 40px;
+    margin-bottom: 14%;
+}
+
+.products section{
+    border: 1px solid #ab69b444;
+    padding: 1%;
+}
+
+/* Product item styling */
+.product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.7s;
+}
+.product-item button{
+    padding: 2%;
+    border: 1px solid #ab69b4;
+    background: transparent;
+    color: inherit;
+}
+
+.product-item button:hover{
+    /* transition: 0.8s; */
+    background: #ab69b4;
+    color:#141f42;
+    border: 2px solid #141f42;
+}
+
+.product-item button:active{
+    color:#ff0000;
+}
+
+/* Price styling */
+.price {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    justify-content: space-evenly;
+}
+
+.filterButton{
+    background-color: transparent;
+    color: inherit;
+    border-color: #734f8c;
+    font-size: 2rem;
+    border: 1px solid;
+    margin: 2%;
+}
+.filterButton:hover{
+    transition: 0.8s;
+    background: #ab69b4;
+    color:#141f42;
+    border: 2px solid #141f42;
+    cursor: pointer;
+}
+.filterButton:active{
+    background: #ab69b4;
+    color:#141f42;
+    border: 2px solid #141f42;
+}
+.filterOptions {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease-in-out;
+}
+  
+.filterOptions.visible {
+    opacity: 1;
+
+    visibility: visible;
+}
+  
+.cart_total{
+    font-size: 2rem;
+}
+.CartList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-cart-item{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px;
+    transition: 0.7s;
+}
+.product-cart-item p{
+    font-size: 1.5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.product-cart-item img{
+    width: 10vw;
+    height: 10vh;
+    padding: 2%;
+}
+.removeButton{
+    padding: 2%;
+    border: 1px solid #ab69b4;
+    background: transparent;
+    color: inherit;
+}
+
+.removeButton:hover{
+    transition: 0.8s;
+    background: #ab69b4;
+    color:#d52929f6;
+    border: 2px solid #141f42;
+}
+
+.removeButton:active{
+    color:#141f42;
+}
+
+@media screen and (max-width:600px){
+    footer{
+        font-size: 2rem;
+    }
+    #nav{
+        font-size: 4rem;
+    }
+    /* Home grid styling */
+    #homeGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1fr);
+    font-size: 4rem;
+    max-height: 50%;
+    margin-top: 1%;
+}
+
+#grid2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+   
+}
+
+
+#emailS{
+    grid-row: 3/3;
+
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-bottom: 35%;
+}
+}
